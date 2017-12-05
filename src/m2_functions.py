@@ -34,9 +34,11 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
+    turtle5()
 
     window.close_on_mouse_click()
 
@@ -102,10 +104,30 @@ def turtle3():
     maja.draw_circle(50)
     maja.end_fill()
 
+def turtle4():
+    alex = rg.SimpleTurtle()
+    alex.pen = rg.Pen('navy', 7)
 
+    alex.backward(200)
+    alex.right(45)
+    alex.forward(70)
+    alex.left(37)
+    alex.forward(100)
+    alex.draw_square(45)
+
+def turtle5():
+    land = rg.SimpleTurtle()
+    land.pen = rg.Pen('red', 3)
+
+    land.right(30)
+    land.forward(150)
+    land.left(45)
+    land.forward(100)
+    land.left(50)
+    land.backward(50)
 ########################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
